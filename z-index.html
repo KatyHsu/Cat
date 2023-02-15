@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Z-Index Property</title>
+	<style type="text/css">
+		body{
+			background-color: lightskyblue;
+		}
+		.mydiv{
+			position: absolute;
+			width: 50%;height: 300px;
+			background-color: white;
+		}
+		.mydiv div{
+			position: absolute;
+			width: 100px;height: 100px;
+			background-color: yellow;
+			opacity: 0.5;
+			border: 1px solid darkgoldenrod;
+		}
+		.mybox{
+			background-color: limegreen!important;
+			opacity: 1.0!important;
+			z-index: 4;
+		}
+	</style>
+</head>
+<body>
+	<h2>Z-Index Property</h2>
+    <div class="mydiv">
+    	<div class="mybox">myBox</div>
+    	<div style="top:20px;left: 20px; z-index: 0;">z-index 0</div>
+    	<div style="top:40px;left: 40px; z-index: 1;">z-index 1</div>
+    	<div style="top:60px;left: 60px; z-index: 2;">z-index 2</div>
+    	<div style="top:80px;left: 80px; z-index: 3;">z-index 3</div>
+    </div>
+</body>
+</html>
